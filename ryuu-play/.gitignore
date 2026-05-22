@@ -1,0 +1,13 @@
+.nyc_output
+nbproject
+coverage
+dist
+node_modules
+
+/avatars
+!/avatars/.keep
+
+/scans/*
+!/scans/.keep
+
+/database.sq3

@@ -1,0 +1,35 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+.flattened-pom.xml
+
+# 编辑器配置文件
+.zed/
+.course/
+.vscode/
+.agents/
+
+#Undefined log 文件 + log文件夹下面的log
+*.log
+logs
+LOG_FILE_IS_UNDEFINED
+LOG_FILE_IS_UNDEFINED.*
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.class
+target/*
+

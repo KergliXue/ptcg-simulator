@@ -1,0 +1,26 @@
+{
+  "name": "@ptcg",
+  "version": "0.2.1",
+  "description": "Pokemon TCG game simulator",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/common",
+    "packages/sets",
+    "packages/server",
+    "packages/play",
+    "packages/cordova"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ptcg/server": "*",
+    "@ptcg/sets": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

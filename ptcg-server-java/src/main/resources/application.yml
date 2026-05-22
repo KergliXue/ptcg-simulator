@@ -1,0 +1,25 @@
+server:
+  port: 12022
+  servlet:
+    context-path: /v1
+
+spring:
+  application:
+    name: ptcg-server-java
+  datasource:
+    url: jdbc:mysql://localhost:3306/ptcg?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
+  secret: "!secret!"
+  token-expire: 86400
+  registration-enabled: true

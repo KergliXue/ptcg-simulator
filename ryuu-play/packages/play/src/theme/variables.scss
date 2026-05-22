@@ -1,0 +1,68 @@
+@use 'sass:math';
+
+$ptcg-size: (
+  nav-menu: 200px,
+  sidebar: 200px,
+  card: 100px,
+  avatar: 44px,
+  profile-avatar: 100px,
+  board-card: 50px,
+  energy-size: 25px
+);
+
+$padding: (
+  small: 8px,
+  normal: 16px,
+  large: 32px
+);
+
+$card-border-radius: 3.5%;
+$card-aspect-ratio: 1.37;
+
+// Variables from angular material theme
+$ptcg-toolbar-height-desktop: map-get($ptcg-size, avatar) !default;
+$ptcg-toolbar-height-mobile: map-get($ptcg-size, avatar) !default;
+
+$ptcg-bench-slots: 8;
+$ptcg-disabled-opacity: .5;
+
+$ptcg-sidebar-tiny-padding: math.div(map-get($padding, small), 2);
+$ptcg-board-tiny-padding: math.div(map-get($padding, small), 4);
+
+$ptcg-prompt-padding: 24px !default;
+$ptcg-prompt-border-radius: 4px !default;
+$ptcg-prompt-max-height: 65vh !default;
+$ptcg-prompt-button-margin: 8px !default;
+
+$ptcg-navy-palette: (
+  50 : #e7eff5,
+  100 : #c3d7e5,
+  200 : #9bbdd4,
+  300 : #73a2c3,
+  400 : #558eb6,
+  500 : #377aa9,
+  600 : #3172a2,
+  700 : #2a6798,
+  800 : #235d8f,
+  900 : #164a7e,
+  A100 : #b5d7ff,
+  A200 : #82bcff,
+  A400 : #4fa1ff,
+  A700 : #3693ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
